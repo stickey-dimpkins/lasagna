@@ -8,7 +8,21 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="container">
+    <div class="page-header">
+      <h2>My Really Great ToyApp (or toy_app) RESTful Adventure</h2>
+      </div>
+      <nav class="navbar navbar-default">
+ 
+
+      <ul class="nav navbar-nav">
+
+        <li role="presentation"><a href="/"><button type="button" class="btn btn-default">Home</button></a></li>
+        <li role="presentation"><a href="/users"><button type="button" class="btn btn-success">Users</button></a></li>
+        <li role="presentation"><a href="/microposts"><button type="button" class="btn btn-info">Microposts</button></a></li>
+      </ul>
+      </nav>
+<div>
     <%= yield %>
   </body>
 </html>
